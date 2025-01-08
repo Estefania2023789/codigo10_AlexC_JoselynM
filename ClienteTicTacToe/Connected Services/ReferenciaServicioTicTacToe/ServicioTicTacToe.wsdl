@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ServicioTicTacToe" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:59794/ServicioTicTacToe.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:59794/ServicioTicTacToe.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioTicTacToe_EmpezarJuego_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmpezarJuego" />
+  </wsdl:message>
+  <wsdl:message name="IServicioTicTacToe_EmpezarJuego_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmpezarJuegoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioTicTacToe_Mover_InputMessage">
+    <wsdl:part name="parameters" element="tns:Mover" />
+  </wsdl:message>
+  <wsdl:message name="IServicioTicTacToe_Mover_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MoverResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioTicTacToe_ObtenerTablero_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerTablero" />
+  </wsdl:message>
+  <wsdl:message name="IServicioTicTacToe_ObtenerTablero_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerTableroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioTicTacToe_DeterminarGanador_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeterminarGanador" />
+  </wsdl:message>
+  <wsdl:message name="IServicioTicTacToe_DeterminarGanador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeterminarGanadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioTicTacToe_Unir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Unir" />
+  </wsdl:message>
+  <wsdl:message name="IServicioTicTacToe_Unir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnirResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioTicTacToe">
+    <wsdl:operation name="EmpezarJuego">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioTicTacToe/EmpezarJuego" message="tns:IServicioTicTacToe_EmpezarJuego_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioTicTacToe/EmpezarJuegoResponse" message="tns:IServicioTicTacToe_EmpezarJuego_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Mover">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioTicTacToe/Mover" message="tns:IServicioTicTacToe_Mover_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioTicTacToe/MoverResponse" message="tns:IServicioTicTacToe_Mover_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerTablero">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioTicTacToe/ObtenerTablero" message="tns:IServicioTicTacToe_ObtenerTablero_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioTicTacToe/ObtenerTableroResponse" message="tns:IServicioTicTacToe_ObtenerTablero_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeterminarGanador">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioTicTacToe/DeterminarGanador" message="tns:IServicioTicTacToe_DeterminarGanador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioTicTacToe/DeterminarGanadorResponse" message="tns:IServicioTicTacToe_DeterminarGanador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Unir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioTicTacToe/Unir" message="tns:IServicioTicTacToe_Unir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioTicTacToe/UnirResponse" message="tns:IServicioTicTacToe_Unir_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicioTicTacToe" type="tns:IServicioTicTacToe">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EmpezarJuego">
+      <soap:operation soapAction="http://tempuri.org/IServicioTicTacToe/EmpezarJuego" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Mover">
+      <soap:operation soapAction="http://tempuri.org/IServicioTicTacToe/Mover" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerTablero">
+      <soap:operation soapAction="http://tempuri.org/IServicioTicTacToe/ObtenerTablero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeterminarGanador">
+      <soap:operation soapAction="http://tempuri.org/IServicioTicTacToe/DeterminarGanador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Unir">
+      <soap:operation soapAction="http://tempuri.org/IServicioTicTacToe/Unir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioTicTacToe">
+    <wsdl:port name="BasicHttpBinding_IServicioTicTacToe" binding="tns:BasicHttpBinding_IServicioTicTacToe">
+      <soap:address location="http://localhost:59794/ServicioTicTacToe.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

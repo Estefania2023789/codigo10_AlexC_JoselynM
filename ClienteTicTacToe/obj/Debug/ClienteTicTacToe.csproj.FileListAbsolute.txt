@@ -1,0 +1,10 @@
+C:\Users\Estef\source\repos\AplicacionesDistribuidas\ClienteTicTacToe\bin\Debug\ClienteTicTacToe.exe.config
+C:\Users\Estef\source\repos\AplicacionesDistribuidas\ClienteTicTacToe\bin\Debug\ClienteTicTacToe.exe
+C:\Users\Estef\source\repos\AplicacionesDistribuidas\ClienteTicTacToe\bin\Debug\ClienteTicTacToe.pdb
+C:\Users\Estef\source\repos\AplicacionesDistribuidas\ClienteTicTacToe\obj\Debug\ClienteTicTacToe.csproj.AssemblyReference.cache
+C:\Users\Estef\source\repos\AplicacionesDistribuidas\ClienteTicTacToe\obj\Debug\ClienteTicTacToe.Form1.resources
+C:\Users\Estef\source\repos\AplicacionesDistribuidas\ClienteTicTacToe\obj\Debug\ClienteTicTacToe.Properties.Resources.resources
+C:\Users\Estef\source\repos\AplicacionesDistribuidas\ClienteTicTacToe\obj\Debug\ClienteTicTacToe.csproj.GenerateResource.cache
+C:\Users\Estef\source\repos\AplicacionesDistribuidas\ClienteTicTacToe\obj\Debug\ClienteTicTacToe.csproj.CoreCompileInputs.cache
+C:\Users\Estef\source\repos\AplicacionesDistribuidas\ClienteTicTacToe\obj\Debug\ClienteTicTacToe.exe
+C:\Users\Estef\source\repos\AplicacionesDistribuidas\ClienteTicTacToe\obj\Debug\ClienteTicTacToe.pdb
